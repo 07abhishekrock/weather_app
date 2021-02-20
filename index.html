@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather_For_U</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+</head>
+<body>
+  <section>
+    <div class="map" lat="20.6" long="80.4">
+      <div class="search_bar">
+        <div class="text">
+          
+
+        <span class="statement">Your Location is</span>
+        <span class="location">Lucknow</span>
+        <input type="text" class="input">
+        </div>
+        <button class="search_icon disable" selected="" index=0></button>
+        <button class="search_icon" index=0>
+          <div class="alt-bg"></div>
+        </button>
+      </div>
+      <div class="search_results">
+        <ul class="search_container">
+          
+        </ul>
+        <div class="loading_bg disable">
+          <span>Loading</span>
+          <div></div>
+        </div>
+      </div>
+    </div>  
+    <div class="weather_container">
+      <h1 class="one_line" id="icon_line">Rainy Weather</h1>
+      <div class="temp">
+        <span class="temp_reading" id="reading">23</span>
+        <span class="temp_circle"></span>
+        <span class="unit" id="unit" type="C">Celsius</span>
+      </div>
+      <div class="stats_grid">
+        <div class="stat">
+          <div class="icon" ></div>
+          <span>Humidity</span>
+          <div class="value" style="background-image:url('./res/icons/humidity.svg')">
+            <div class="bg" style="background-image:none;"></div>
+            <span id="humid_reading">50%</span>
+          </div>
+        </div>
+        <div class="stat">
+          <div class="icon" style="background-image:url('./res/icons/air_pressure_icon.svg')"></div>
+          <span>Air Pressure</span>
+          <div class="value" style="background-image:url('./res/icons/pressure_meter.svg')">
+            <div class="bg" style="background-image:None"></div>
+          <span id="pressure_reading">100</span>
+          </div>
+        </div>
+        <div class="stat">
+          <div class="icon" style="background-image:url('./res/icons/ppt.svg')"></div>
+          <span>Precipitation</span>
+          <div class="value">
+            <div class="bg"></div>
+          <span id="ppt_reading">50%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="app.js"></script>
+</body>
+</html>
